@@ -6,7 +6,7 @@
   </div>
   <h1>{{order.from.name}}</h1>
   <div class="h4">Order by: {{order.author}} (<a href="mailto:{{order.email}}">{{order.email}}</a>)</div>
-  <div class="h4" ng-cloak ng-show="order.menuLink">Menu: <a ng-href="{{order.menuLink}}">{{order.menuLink}}</a></div>
+  <div class="h4" ng-cloak ng-show="order.menuLink">Menu: <a ng-href="{{order.menuLink}}" target="_blank">{{order.menuLink}}</a></div>
   <table class="table table-striped" style="margin-top: 1em">
     <thead>
       <tr>
