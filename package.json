@@ -23,5 +23,8 @@
   "devDependencies": {
     "expect": "^1.13.0",
     "request": "^2.65.0"
+  },
+  "engines": {
+    "node": "4.2.6"
   }
 }
