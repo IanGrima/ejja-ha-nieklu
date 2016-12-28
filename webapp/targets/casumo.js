@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                 overwrite: true,
                 replacements: [{
                         from: 'images/front-logo.png',
-                        to: 'images/front-logo.png'
+                        to: 'images/casumo-logo.png'
                     }]
             }
         }
