@@ -354,7 +354,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', function (target) {
         var tasks;
         if (target) {
-            tasks = require('./targets/businesslabs.js')(grunt);
+            tasks = require('./targets/' + target + '.js')(grunt);
         } else {
             tasks = [
                 'clean:dist',
