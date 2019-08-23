@@ -9,7 +9,7 @@ module.exports = function (grunt) {
                 overwrite: true,
                 replacements: [{
                         from: 'http://localhost:5000',
-                        to: '//casumo-ejja-ha-nieklu.herokuapp.com'
+                        to: '//businesslabs.herokuapp.com'
                     }]
             },
             titles: {
