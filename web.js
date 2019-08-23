@@ -13,7 +13,7 @@ var Item = require('./ikel_modules/item.js');
 var MongoClient = require('mongodb').MongoClient
 var ObjectId = require('mongodb').ObjectID;
 
-var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL ||
+var mongoUri = process.env.MONGODB_URI || process.env.MONGOLAB_URI || process.env.MONGOHQ_URL ||
   'mongodb://localhost/ejja-ha-nieklu';
 
 app.use(cors());
