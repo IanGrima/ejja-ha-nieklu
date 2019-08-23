@@ -353,24 +353,24 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', function (target) {
         var tasks;
-        //if (target) {
+        if (target) {
             tasks = require('./targets/businesslabs.js')(grunt);
-        //} else {
-        //    tasks = [
-        //        'clean:dist',
-        //        'useminPrepare',
-        //        'concurrent:dist',
-        //        'autoprefixer',
-        //        'concat',
-        //        'ngmin',
-        //        'copy:dist',
-        //        'cdnify',
-        //        'cssmin',
-        //        'uglify',
-        //        'rev',
-        //        'usemin',
-        //   ]
-        // }
+        } else {
+            tasks = [
+                'clean:dist',
+                'useminPrepare',
+                'concurrent:dist',
+                'autoprefixer',
+                'concat',
+                'ngmin',
+                'copy:dist',
+                'cdnify',
+                'cssmin',
+                'uglify',
+                'rev',
+                'usemin',
+            ]
+        }
         
         grunt.task.run(tasks);
     });
